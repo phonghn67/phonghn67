@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Log In</title>
+   <link rel="stylesheet" href="/css/lab10.css">
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+      .background{
+         width: 100%;
+         height: 600px;
+         background-color: rgb(112, 111, 111);
+            text-align: center;
+            position: relative;
+      }
+      .background .container{
+         width: 500px;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: rgb(178, 178, 178);
+            position: absolute;
+            margin-left: 400px;
+            margin-top: 50px;
+      }
+      .form-group .form-button a{
+         text-decoration: none;
+         color: blue;
+
+      }
+      .form-group .form-button a:hover{
+         color: blue;
+
+      }
+      .container {
+         width: 300px;
+         text-align: center;
+         border: 2px solid black;
+         padding: 10px;
+         background-color: rgb(178, 178, 178);
+      }
+
+      .dangnhap {
+         margin-top: 10px;
+         width: 200px;
+         height: 40px;
+         border: none;
+         border-radius: 5px;
+         font-weight: bold;
+         background-color: rgb(49, 82, 245);
+      }
+
+      .dangnhap:hover {
+         border: 2px solid rgb(217, 217, 217);
+         background-color: black;
+         color: white;
+      }
+
+      .dangnhap a {
+         color: white;
+         text-decoration: none;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="background">
+   <form class="container">
+      <div class="form-group">
+         <label for="">User name:</label> <br>
+         <input class="form-control" type="text" tabindex="1" placeholder="@email.com">
+      </div>
+      <div class="form-group">
+         <label for="">Password:</label><br>
+         <input type="password" class="form-control" />
+      </div>
+      <div class="form-group">
+         <label for="">Reset Password:</label><br>
+         <input type="password" class="form-control" />
+      </div>
+      <div>
+         <label for="">Ngày Sinh:</label><br>
+         <input type="date" tabindex="3">
+      </div>
+      <div>
+      </div>
+      <div>
+      </div>
+      <!-- <div class="form-group">
+         <label for="">Ghi Chú:</label><br>
+         <textarea tabindex="6" cols="30" rows="3"></textarea>
+      </div> -->
+      <hr />
+      <div class="form-group">
+         <button class="form-button" tabindex="3"><a href="/pages/đăngnhập.html">Đăng ký</a> </button>
+         <button class="form-button" tabindex="4"><a href="">Nhập lại</a></button>
+      </div>
+      <button class="dangnhap"><a href="">Log In with Facebook</a></button> <br>
+      <button class="dangnhap"><a href="">Log In with Google</a></button><br>
+      <button class="dangnhap"><a href="">Log In with Number</a></button>
+   </form>
+</div>
+</body>
+
+</html>
