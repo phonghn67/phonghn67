@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        .background{
+
+        .background {
             width: 100%;
             height: 600px;
             background-color: rgb(112, 111, 111);
             text-align: center;
             position: relative;
         }
-        .background .container{
+
+        .background .container {
             width: 500px;
             border: 2px solid black;
             padding: 10px;
@@ -27,7 +30,8 @@
             margin-left: 400px;
             margin-top: 50px;
         }
-        .form-control{
+
+        .form-control {
             margin: 5px 0px;
             padding: 5px;
             border: none;
@@ -36,89 +40,96 @@
             box-shadow: 0 0 3px blue;
             color: orangered;
         }
-        .form-control:focus{
+
+        .form-control:focus {
             box-shadow: 0 0 3px orangered;
         }
-        .button a{
-            padding: 5px 10px;
-            border: none;
-            border-radius: 3px;
-            box-shadow: 0 0 3px gray;
-            outline: none;
+
+        .button a {
+            color: white;
             text-decoration: none;
         }
-        .button:focus{
+
+        .button:focus {
             box-shadow: 0 0 3px orangered;
             color: orangered;
         }
-        .button:disabled{
+
+        .button:disabled {
             text-decoration: line-through;
         }
-        .button:hover{
-            background-color: orangered;
+
+        .button:hover {
+            background-color: rgb(100, 99, 98);
             color: white;
         }
-        .button{
+
+        .button {
             margin-top: 10px;
-    padding: 8px 30px;
-    outline: none;
-    border: none;
-    border-radius: 20px;
-    font-weight: bold;
-    color: orangered;
-    box-shadow: inset 0 0 20px blue ;
-}
-.dangnhap{
-    margin-top: 10px;
-   width: 200px;
-   height: 40px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    background-color: rgb(49, 82, 245);
-}
-.dangnhap:hover{
-    border: 2px solid rgb(217, 217, 217);
-    background-color: black;
-    color: white;
-}
-.dangnhap a{
-    color: white;
-    text-decoration: none;
-}
+            width: 150px;
+            height: 40px;
+            border: none;
+            border-radius: 20px ;
+            font-weight: bold;
+            background-color: rgb(61, 64, 82);
+        }
+
+        .dangnhap {
+            margin-top: 10px;
+            width: 200px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            background-color: rgb(49, 82, 245);
+        }
+
+        .dangnhap:hover {
+            border: 2px solid rgb(217, 217, 217);
+            background-color: black;
+            color: white;
+        }
+
+        .dangnhap a {
+            color: white;
+            text-decoration: none;
+        }
     </style>
 </head>
+
 <body>
     <div class="background">
-<div class="container">
-    <form action="Login.php">
-        <div class="form-group">
-            <label for="">User name:</label>
-            <input type="text" class="form-control"/>
+        <div class="container">
+            <form action="Login.php">
+                <div class="form-group">
+                    <label for="">User name:</label>
+                    <input type="text" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="">Password:</label>
+                    <input type="password" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" />
+                    <label for="">Remember me?</label>
+                </div>
+                <hr />
+                <div>
+                    <button class="button">
+                        <a href="/index.html"> Đăng nhập </a>
+                    </button>
+                    <button class="button"> <a href="./đăngký.html">Đăng ký</a></button><br>
+                    <button class="button"><a href="./quên mật khẩu.html"> Quên mật khẩu</a></button>
+                </div>
+                <button class="dangnhap"><a href="https://www.facebook.com/">Sign Up with Facebook</a></button> <br>
+                <button class="dangnhap"><a
+                        href="https://accounts.google.com/v3/signin/identifier?dsh=S1342232954%3A1676891372917607&hl=vi&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWnogHd0ejCDuJHui5iSYcmsgmfG8l7QX4q2w4oYs60xFm5Lzil21ko170n5-nDzc5pxFFt5sfSuwA">Sign
+                        Up with Google</a></button><br>
+            </form>
+
         </div>
-        
-        <div class="form-group">
-            <label for="">Password:</label>
-            <input type="password" class="form-control"/>
-        </div> 
-        <div class="form-group">
-            <input type="checkbox" />
-            <label for="">Remember me?</label>
-        </div>
-        <hr/>
-        <div>
-            <button class="button" >
-               <a href="/pages/asm trang chu.html"> Đăng nhập </a>
-            </button>
-            <button class="button" > <a href="/pages/đăngký.html">Đăng ký</a></button><br>
-            <button class="button"> Quên mật khẩu</button>
-        </div>
-        <button class="dangnhap"><a href="">Sign Up with Facebook</a></button> <br>
-        <button class="dangnhap"><a href="">Sign Up with Google</a></button><br>
-        <button class="dangnhap"><a href="">Sign Up with Number</a></button>
-    </form>
-    
-</div>
-</div>
+    </div>
 </body>
+
 </html>

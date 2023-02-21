@@ -29,15 +29,35 @@
             margin-left: 400px;
             margin-top: 50px;
       }
-      .form-group .form-button a{
-         text-decoration: none;
-         color: blue;
+      .button a {
+            color: white;
+            text-decoration: none;
+        }
 
-      }
-      .form-group .form-button a:hover{
-         color: blue;
+        .button:focus {
+            box-shadow: 0 0 3px orangered;
+            color: orangered;
+        }
 
-      }
+        .button:disabled {
+            text-decoration: line-through;
+        }
+
+        .button:hover {
+            background-color: rgb(100, 99, 98);
+            color: white;
+        }
+
+        .button {
+            margin-top: 10px;
+            width: 150px;
+            height: 40px;
+            border: none;
+            border-radius: 20px ;
+            font-weight: bold;
+            background-color: rgb(61, 64, 82);
+        }
+        
       .container {
          width: 300px;
          text-align: center;
@@ -51,7 +71,7 @@
          width: 200px;
          height: 40px;
          border: none;
-         border-radius: 5px;
+         border-radius: 5px ;
          font-weight: bold;
          background-color: rgb(49, 82, 245);
       }
@@ -96,14 +116,13 @@
          <label for="">Ghi Chú:</label><br>
          <textarea tabindex="6" cols="30" rows="3"></textarea>
       </div> -->
-      <hr />
-      <div class="form-group">
-         <button class="form-button" tabindex="3"><a href="/pages/đăngnhập.html">Đăng ký</a> </button>
-         <button class="form-button" tabindex="4"><a href="">Nhập lại</a></button>
+      <br><hr><br>
+      <div>
+         <button class="button" tabindex="3"><a href="./đăngnhập.html">Đăng ký</a> </button>
+         <button class="button" tabindex="4"><a href="">Nhập lại</a></button>
       </div>
-      <button class="dangnhap"><a href="">Log In with Facebook</a></button> <br>
-      <button class="dangnhap"><a href="">Log In with Google</a></button><br>
-      <button class="dangnhap"><a href="">Log In with Number</a></button>
+      <button class="dangnhap"><a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1661697988&extra_1=s%7Cc%7C515923225148%7Ce%7C%C4%91%C4%83ng%20ky%20fb%7C&placement=&creative=515923225148&keyword=%C4%91%C4%83ng%20ky%20fb&partner_id=googlesem&extra_2=campaignid%3D1661697988%26adgroupid%3D65157402958%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-499385673293%26loc_physical_ms%3D1028581%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiA0cyfBhBREiwAAtStHNn8r_80QVd-E-AMKevLU6Gt6Tt-TnW4_k7jVfdC0hGFIyD_S2lVvxoCFPUQAvD_BwE">Log In with Facebook</a></button> <br>
+      <button class="dangnhap"><a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp">Log In with Google</a></button><br>
    </form>
 </div>
 </body>
